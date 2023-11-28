@@ -6,7 +6,7 @@ export default function Layout({children}: any) {
   return (
     <div className={"flex flex-col h-[100vh] w-screen"}>
       <Navbar/>
-      <main className="h-full">{children}</main>
+      <main className="h-full overflow-auto">{children}</main>
       <Footer/>
     </div>
   )
