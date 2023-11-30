@@ -2,14 +2,12 @@ import React from 'react'
 import { PaymentCard } from '@/components/PaymentCard'
 //import 'bootstrap/dist/css/bootstrap.css'
 
-const payment = () => {
-    return (
-        <body className="bg-[#EDEEC9]">
-            <div className = "flex justify-center pt-11 pb-11">
-                <PaymentCard />
-            </div>
-        </body>
-    )
+const Payment = () => {
+  return (
+    <div className="flex bg-primary-yellow-green w-full h-full justify-center place-items-center">
+      <PaymentCard/>
+    </div>
+  )
 }
 
-export default payment
+export default Payment

@@ -1,14 +1,14 @@
 import React from 'react'
-import { CardQuotation } from '@/components/CardQuotation'
+import { Completion } from '@/components/Completion';
 
-const Quotation = () => {
+export const OrderCompletion = () => {
   return (
     <div className="bg-primary-yellow-green w-full h-full">
       <div className="flex justify-center pt-11 pb-11">
-        <CardQuotation/>
+        <Completion/>
       </div>
     </div>
   )
 }
 
-export default Quotation
+export default OrderCompletion;
