@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import StarRating from '@/components/rating/StarRating';
+import { Input } from "@/components/ui/input";
 
 const Review = () => {
 
@@ -31,6 +32,7 @@ const Review = () => {
           Submit
         </Link>
       </div>
+    </div>
   );
 };
 
