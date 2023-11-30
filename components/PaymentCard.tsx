@@ -61,7 +61,7 @@ export function PaymentCard() {
         </form>
       </CardContent>
       <CardFooter className="flex justify-end">
-        <Button className="bg-[#9DCBBA] shadow-md shadow-slate-600 text-black"><Link href="/orderCompletion">Pay</Link></Button>
+        <Button className="bg-[#9DCBBA] shadow-md shadow-slate-600 text-black"><Link href="/pages/orderCompletion">Pay</Link></Button>
       </CardFooter>
     </Card>
   )
