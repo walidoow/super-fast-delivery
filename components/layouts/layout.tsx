@@ -1,6 +1,6 @@
 import Navbar from "@/components/navbar/Navbar";
-import '../../styles/globals.css'
 import Footer from "@/components/footer/Footer";
+import '../../styles/globals.css'
 
 export default function Layout({children}: any) {
   return (

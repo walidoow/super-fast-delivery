@@ -1,31 +1,58 @@
 import Link from 'next/link';
+import { usePathname } from "next/navigation";
 
-const Navbar = () => (
-  <nav className="bg-primary-mint-green p-4">
-    <div className="container mx-auto flex justify-between items-center">
-      <h1 className="text-primary-dark-grey text-3xl font-bold">
-        Super Fast Delivery
-      </h1>
+type Path = {
+  href: string,
+  name: string
+};
 
-      <div className="flex space-x-10">
-        <Link href="/pricing" className="text-primary-dark-grey hover:text-primary-orange">
-          Pricing
+const paths: Path[] = [
+  {
+    href: "/pricing",
+    name: "Pricing",
+  },
+  {
+    href: "/login",
+    name: "Login",
+  },
+  {
+    href: "/review",
+    name: "Review",
+  },
+  {
+    href: "/track",
+    name: "Track your order",
+  },
+  {
+    href: "/support",
+    name: "Customer Support",
+  },
+];
+
+const Navbar = () => {
+  const pathname = usePathname()
+
+  return (
+    <nav className="bg-primary-mint-green p-4 shadow-black drop-shadow-lg">
+      <div className="container mx-auto flex justify-between items-center shadow-black drop-shadow-lg">
+        <Link href={"/"}>
+          <h1 className="text-primary-dark-grey text-3xl font-bold">
+            Super Fast Delivery
+          </h1>
         </Link>
-        <Link href="/login" className="text-primary-dark-grey hover:text-primary-orange">
-          Login
-        </Link>
-        <Link href="/review" className="text-primary-dark-grey hover:text-primary-orange">
-          Review
-        </Link>
-        <Link href="/track" className="text-primary-dark-grey hover:text-primary-orange">
-          Track your order
-        </Link>
-        <Link href="/support" className="text-primary-dark-grey hover:text-primary-orange">
-          Customer Support
-        </Link>
+        <div className={`flex space-x-10`}>
+          {paths.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`text-lg text-primary-dark-grey hover:text-primary-orange hover:text-xl transition-font-size 
+              ease-in-out duration-500 ${item.href === pathname ? "underline underline-offset-4" : ""}`}>
+              {item.name}
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
-  </nav>
-);
+    </nav>);
+};
 
 export default Navbar;
