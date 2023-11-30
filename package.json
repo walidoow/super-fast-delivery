@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.0",
+    "@fortawesome/free-solid-svg-icons": "^6.5.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@hookform/resolvers": "^3.3.2",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-avatar": "^1.0.4",
@@ -33,7 +36,6 @@
     "react-dom": "^18",
     "react-hook-form": "^7.48.2",
     "react-loader-spinner": "^5.4.5",
-    "react-router-dom": "^6.20.0",
     "react-text-transition": "^3.1.0",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7",
