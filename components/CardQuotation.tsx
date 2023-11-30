@@ -33,7 +33,7 @@ export function CardQuotation() {
         <QuotationAccordion />
       </CardContent>
       <CardFooter className="flex justify-end">
-        <Button className = "bg-[#9DCBBA] shadow-md shadow-slate-600 text-black"><Link href = "/payment">Continue</Link></Button>
+        <Button className = "bg-[#9DCBBA] shadow-md shadow-slate-600 text-black"><Link href = "/pages/payment">Continue</Link></Button>
       </CardFooter>
     </Card>
   )
