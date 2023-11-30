@@ -4,6 +4,7 @@ import TruckIcon from "@/components/track/icons/TruckIcon";
 import PackageIcon from "@/components/track/icons/PackageIcon";
 import React from "react";
 import { Map, Marker } from "pigeon-maps"
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 const TrackBody = () => {
 
@@ -33,8 +34,26 @@ const TrackBody = () => {
             <h2 className={"text-3xl font-semibold"}>Shipping Information</h2>
             <h1 className={"font-light"}>Ship to Concordia University</h1>
             <h1 className={"font-light"}>1550 De Maisonneuve West, Montreal Quebec H3G 2E9</h1>
-            <h1 className={"font-light"}>Tracking link: <span
-              className={"text-blue-700 font-light underline underline-offset-4"}>https://bit.ly/J45jk7</span></h1>
+            <h1 className={"font-light"}>Tracking link:&nbsp;CLICK HERE -{">"}&nbsp;
+              <Dialog>
+                <DialogTrigger asChild>
+                  <span
+                    className={"text-blue-700 font-light underline underline-offset-4 hover:text-white"}>
+                     https://bit.ly/J45jk7</span>
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-fit overflow-hidden p-10">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=0"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen>
+                  </iframe>
+                </DialogContent>
+
+              </Dialog>
+            </h1>
           </div>
           <div className={"flex flex-col gap-10"}>
             <h2 className={"text-3xl font-semibold"}>Contact Deliveryman</h2>
