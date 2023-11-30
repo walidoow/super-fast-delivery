@@ -14,6 +14,9 @@ module.exports = {
       screens: {
         "2xl": "1400px",
       },
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif']
+      }
     },
     extend: {
       colors: {
@@ -21,6 +24,8 @@ module.exports = {
         'primary-mint-green': '#9DCBBA',
         'primary-dark-grey': '#242325',
         'primary-yellow-green': '#EDEEC9',
+        'secondary-light-grey': '#d5d0c3',
+        'stripe-purple':'#625aff',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
