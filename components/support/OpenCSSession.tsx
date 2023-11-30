@@ -43,7 +43,7 @@ const formSchema = z.object({
   }),
 });
 
-export function OpenCSSession() {
+export default function OpenCSSession() {
   const [submittedValues, setSubmittedValues] = useState(null);
 
   const form = useForm({

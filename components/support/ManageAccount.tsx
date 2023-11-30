@@ -3,9 +3,9 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Checkmark } from "react-checkmark";
+// import { Checkmark } from "react-checkmark";
 
-export const ManageAccount = () => {
+const ManageAccount = () => {
   const [showContent, setShowContent] = useState(false);
   const handleButtonClick = () => {
     setShowContent(!showContent);
@@ -22,12 +22,12 @@ export const ManageAccount = () => {
           Manage your account settings
         </p>
       </div>
-      <Separator className="my-6" />
+      <Separator className="my-6"/>
       <div className="mx-6">
         {showContent ? (
-          <div style={{ width: "750px", marginTop: "20%" }}>
-            <Checkmark size="100px" color="#223344" />
-            <p style={{ textAlign: "center", marginTop: "6px" }}>
+          <div style={{width: "750px", marginTop: "20%"}}>
+            {/*<Checkmark size="100px" color="#223344" />*/}
+            <p style={{textAlign: "center", marginTop: "6px"}}>
               Account updated
             </p>
           </div>
@@ -82,12 +82,12 @@ export const ManageAccount = () => {
                     placeholder="New address"
                     className="mr-2"
                   />
-                  <Input id="city" placeholder="New city" className="mr-2" />
-                  <Input id="postal" placeholder="New postal code" />
+                  <Input id="city" placeholder="New city" className="mr-2"/>
+                  <Input id="postal" placeholder="New postal code"/>
                 </div>
               </div>
               <div
-                style={{ width: "130px", margin: "auto", marginTop: "30px" }}
+                style={{width: "130px", margin: "auto", marginTop: "30px"}}
               >
                 <Button onClick={handleButtonClick}>Save changes</Button>
               </div>
@@ -98,3 +98,5 @@ export const ManageAccount = () => {
     </div>
   );
 };
+
+export default ManageAccount;
