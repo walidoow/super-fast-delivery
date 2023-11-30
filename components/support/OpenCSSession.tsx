@@ -74,7 +74,7 @@ export default function OpenCSSession() {
           Open a customer service case and chat with a representative
         </p>
       </div>
-      <Separator className="my-6" />
+      <Separator className="my-6 bg-primary-dark-grey" />
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
           <FormField
