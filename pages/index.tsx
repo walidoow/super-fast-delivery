@@ -1,6 +1,7 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
+import { useRouter } from "next/router";
 
 const TEXTS = [
   'Rapid Routes, Reliable Results!',
@@ -9,6 +10,7 @@ const TEXTS = [
 ];
 
 export default function Home() {
+  const router = useRouter();
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -34,7 +36,8 @@ export default function Home() {
               <span className="text-2xl">Track</span>
               <form className=" flex justify-content">
                 <input type="text" className="w-4/6 bg-secondary-light-grey rounded" placeholder="Tracking Number"/>
-                <button type="submit" className="ml-2 w-6 h-6 bg-secondary-light-grey rounded">
+                <button type="submit" className="ml-2 w-6 h-6 bg-secondary-light-grey rounded"
+                        onClick={() => router.push('/track')}>
                   <svg className="w-6 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                        viewBox="0 0 20 20">
                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
