@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import { useEffect, useState } from "react";
 import { useMask } from "@react-input/mask";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
