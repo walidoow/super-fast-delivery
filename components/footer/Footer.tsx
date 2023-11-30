@@ -6,7 +6,7 @@ const Footer = () => (
           <h2 className="text-xl font-bold">Super Fast Delivery</h2>
         </div>
         <div className="flex flex-col gap-10 ml-5 mt-1 md:flex-row md:items-center">
-          <a href="/request" className="mb-4 md:mb-0 md:mr-6 hover:text-primary-orange">
+          <a href="/quotation" className="mb-4 md:mb-0 md:mr-6 hover:text-primary-orange">
             Request a quotation
           </a>
           <a href="/track" className="mb-4 md:mb-0 md:mr-6 hover:text-primary-orange">
